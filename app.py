@@ -4,7 +4,7 @@ import joblib
 from pathlib import Path
 from pypdf import PdfReader
 from docx import Document
-
+model = joblib.load("document_language_detector.pkl")
 
 # Page configuration
 st.set_page_config(
